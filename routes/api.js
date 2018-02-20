@@ -10,6 +10,7 @@ router.use((req, res, next) => {
     next();
 });
 
+// Authentication middleware
 function isAuthenticated(req, res, next) {
     if (req.isAuthenticated()) {
         next();

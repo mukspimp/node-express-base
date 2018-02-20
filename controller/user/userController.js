@@ -17,8 +17,7 @@ exports.userList = async(req, res) => {
 
 exports.register = async(req, res) => {
     console.log(req.body);
-    // TODO: validate params 
-    // Insert user
+    // TODO: validate params     
     var result = await userServices.addUser(req, res);
     if (result) {
         res.send('200', res.users);

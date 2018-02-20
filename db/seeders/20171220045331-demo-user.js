@@ -9,7 +9,7 @@ module.exports = {
     return queryInterface.bulkInsert('Users', [{
       firstName: 'Mukund',
       lastName: 'Pimpale',
-      email: 'mukund@gmail.com',
+      email: 'mukund@mail.com',
       createdAt: new Date(),
       updatedAt: new Date()
     }], {});
