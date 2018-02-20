@@ -2,7 +2,7 @@
 Node Express Sequelize Base Project
 
 
-## Sequelise setup 
+## Sequelise setup and commands 
 
 
 $  npm install --save sequelize pg pg-hstore
@@ -13,32 +13,38 @@ $  npm install -g sequelize-cli
 
 create file .sequelize in root folder containing 
 
-const path = require('path');
+    const path = require('path');
 
-module.exports = {
-  "config": path.resolve('./db/config', 'config.json'),
-  "models-path": path.resolve('./db/models'),
-  "seeders-path": path.resolve('./db/seeders'),
-  "migrations-path": path.resolve('./db/migrations')
-};
-
-
--- Create directory strucure for sequelize 
-$ sequelize init
-
--- For other command
-$ sequelize -help
-
--- Create Model Using Sequelize CLI 
-$ sequelize model:generate --name User --attributes firstName:string,lastName:string,email:string
-
--- DB migration 
-$ sequelize db:migrate
-
--- DB Seed
-$ sequelize db:seed:all
+    module.exports = {
+      "config": path.resolve('./db/config', 'config.json'),
+      "models-path": path.resolve('./db/models'),
+      "seeders-path": path.resolve('./db/seeders'),
+      "migrations-path": path.resolve('./db/migrations')
+    };
 
 
--- Add Migrations 
-$ sequelize migration:generate --name add-password-in-user
+Create directory strucure for sequelize 
+
+    $ sequelize init
+
+For other command
+  
+    $ sequelize -help
+
+Create Model Using Sequelize CLI 
+  
+    $ sequelize model:generate --name User --attributes firstName:string,lastName:string,email:string
+
+DB migration 
+  
+    $ sequelize db:migrate
+
+DB Seed
+  
+    $ sequelize db:seed:all
+
+
+Add Migrations 
+
+    $ sequelize migration:generate --name add-password-in-user
 
