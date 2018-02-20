@@ -1,14 +1,13 @@
-# node-express-base
-Node Express Sequelize Base Project
+# Node Express Sequelize Passport 
+
+This example demonstrates how to use Express 4.x, Sequelize 4.x, and Passport to authenticate users using a username and password with form-based authentication and passport google oauth2. Use this example as a starting point for your own web applications.
 
 
-## Sequelise setup and commands 
+## Sequelize setup and commands 
 
+    $  npm install --save sequelize pg pg-hstore
 
-$  npm install --save sequelize pg pg-hstore
-
-
-$  npm install -g sequelize-cli
+    $  npm install -g sequelize-cli
 
 
 create file .sequelize in root folder containing 
