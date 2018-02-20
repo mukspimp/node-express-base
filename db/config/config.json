@@ -1,0 +1,27 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "node_demo",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "node_test",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "postgres",
+    "database": "node_prod",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "dialect": "postgres"
+  }
+}
